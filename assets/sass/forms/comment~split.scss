@@ -1,0 +1,46 @@
+.comments-area .comments-title {
+  color: $color__text-menu;
+}
+
+.comments-area .comment-list .fn {
+  color: $color__text-menu;
+}
+
+.comments-area .comment-respond .comment-reply-title {
+  color: $color__text-menu;
+}
+
+.comments-area .comment-respond .comment-form label {
+  color: $color__text-menu;
+}
+
+.comments-area .comment-respond .comment-form .comment-form-author input,
+.comments-area .comment-respond .comment-form .comment-form-email input,
+.comments-area .comment-respond .comment-form .comment-form-url input {
+  border: 0.1rem solid $color__background-hr;
+  background-color: transparent;
+}
+
+.comments-area .comment-respond .comment-form .comment-form-author input:hover, .comments-area .comment-respond .comment-form .comment-form-email input:hover, .comments-area .comment-respond .comment-form .comment-form-url input:hover {
+  border-color: #D0D0D0;
+}
+
+.comments-area .comment-respond .comment-form .comment-form-comment textarea {
+  border: 0.1rem solid $color__background-hr;
+  background-color: transparent;
+}
+
+.comments-area .comment-respond .comment-form .comment-form-comment textarea:hover {
+  border-color: #D0D0D0;
+}
+
+.comments-area .comment-respond .comment-form .form-submit input {
+  color: white;
+  background-color: $color__background-button;
+}
+
+.comments-area .comment-respond .comment-form .form-submit input:active, .comments-area .comment-respond .comment-form .form-submit input:focus, .comments-area .comment-respond .comment-form .form-submit input:hover {
+  background-color: $color__text-menu;
+  color: white;
+}
+

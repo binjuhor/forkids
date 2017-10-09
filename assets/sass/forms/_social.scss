@@ -1,0 +1,38 @@
+// .tags-share__share{
+// 	position: relative;
+// 	z-index: 2;
+// 	left: auto;
+// 	width: 100%;
+// 	@include media-breakpoint-up('xl'){
+// 		left: 15%;
+// 		position: absolute;
+// 		width: auto;
+// 	}
+// 	.tags-share__list-social{
+// 		padding: 0;
+// 		display: flex;
+// 		list-style: none;
+// 		margin: 0;
+// 		position: relative;
+// 		@include media-breakpoint-up('xl'){
+// 			padding: 13rem 0 0 0;
+// 			display: inline-block;
+// 		}
+// 		.social__list{
+// 			width: 3rem;
+// 		    height: 3rem;
+// 		    margin-bottom: 1rem;
+// 		    line-height: 3rem;
+// 		    border: 1px solid #3b5998;
+// 		    text-align: center;
+// 		    border-radius: 10rem 10rem;
+// 		    font-size: 1.2rem;
+// 		    &:hover{
+// 		    	background-color:#3b5998;
+// 		    	a{
+// 		    		color:#fff;
+// 		    	}
+// 		    }
+// 		}
+// 	}
+// }
