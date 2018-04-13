@@ -21,7 +21,7 @@ body {
   width: 100%;
   background: #80b33a; }
   .topbar .row {
-    min-height: 3.75rem;
+    min-height: 3.625rem;
     position: relative; }
   .topbar__infomation {
     position: absolute;
