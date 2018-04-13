@@ -7,75 +7,125 @@
     <title>kidslogs.com</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     
 </head>
 <body>
     <header id="header" class="topbar">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col align-self-center text-center">
                     <a href="#" class="topbar__logo"><img class="topbar__image" src="assets/images/logo.png" alt="kidslogs.com"></a>
-                </div>
-                <div class="topbar__infomation topbar__infomation--absolute">
-                    <img class="topbar__avatar" src="demo-image/user.png" alt="Binjuhor">
-                    <p>Binjuhor</p>
+                    <div class="topbar__infomation">
+                        <a href="#">
+                            <img class="topbar__avatar" src="demo-image/user.png" alt="Binjuhor">
+                            <p>Hoàng Kiếm</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </header><!-- /header -->
+    </header>
     
-    <div class="kidslogs">
+    <section>
+
         <div class="container">
+            <!-- Start kids -->
+            <div class="row justify-content-end">
+                <div class="col-md-10">
+                    <div class="kids">
+                        <ul class="kids__list">
+                            <li class="kids__item active">
+                                <a href="#">
+                                    <img src="demo-image/main-kid.jpg">
+                                </a>
+                            </li>
+                            <li class="kids__item">
+                                <a href="#">
+                                    <img src="demo-image/kid.jpg">
+                                </a>
+                            </li>
+                            <li class="kids__item">
+                                <a href="#">
+                                    <img src="demo-image/kid1.jpg">
+                                </a>
+                            </li>
+                            <li class="kids__item">
+                                <a href="#">
+                                    <img src="demo-image/kid2.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <div class="kids">
-                <ul class="kids__list">
-                    <li class="kids__item active">
-                        <a href="#"><img src="demo-image/main-kid.jpg"></a>
-                    </li>
-                    <li class="kids__item">
-                        <a href="#"><img src="demo-image/kid.jpg"></a>
-                    </li>
-                    <li class="kids__item">
-                        <a href="#"><img src="demo-image/kid1.jpg"></a>
-                    </li>
-                    <li class="kids__item">
-                        <a href="#"><img src="demo-image/kid2.jpg"></a>
-                    </li>
-                </ul>
-            </div><!-- .header-page-->
+            <!-- Start fillters -->
+            <div class="row justify-content-end">
 
-        </div>
-
-
-        <div class="clear"></div>
-
-        <div class="kidslogs__left">
-            
-            <div class="container">
-
-                <div class="blog__fillter">
-                    <div class="blog__fillter--title">Fillter</div>
-                    <ul class="blog__listfillter">
-                        <li><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
-                        <li><a href="#"><i class="fa fa-bolt"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-users"></i></a></li>
-                        <li><a href="#"><i class="fa fa-child"></i></a></li>
-                        <li><a href="#"><i class="fa fa-female"></i></a></li>
-                        <li><a href="#"><i class="fa fa-bicycle"></i></a></li>
+                <div class="fillters col-md-10">
+                    <div class="fillters__title">Sự Kiện</div>
+                    <ul class="fillters__list">
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-tripadvisor"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-bolt"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-users"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-child"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-female"></i>
+                            </a>
+                        </li>
+                        <li class="fillters__item">
+                            <a href="#">
+                                <i class="fa fa-bicycle"></i>
+                            </a>
+                        </li>
                     </ul>
-                </div><!--.fillter-post-->
-                
-                <div class="post">
-                    <div class="post__header">
-                        <a href="#photo-video">Photo / Video</a>
-                        <a href="#write-post">Write post</a>
-                        <a href="#story">Story</a>
-                    </div><!--.header-post-->
+                </div>
+            </div>
+
+            <!-- Start editor -->
+            <div class="row justify-content-end">
+                <div class="post__time col-md-2">
+                    <ul class="post__tag">
+                        <li data-event="#soc">
+                            <strong>Sóc</strong>
+                            <p>1 năm 2 tháng</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="editor col-md-8">
+                    <div class="editor__header">
+                        <a class="editor__item" href="#photo-video">Photo / Video</a>
+                        <a class="editor__item" href="#write-post">Viết bài</a>
+                        <a class="editor__item" href="#story">Câu truyện</a>
+                    </div>
 
                     <div class="editor__post">
                         <div class="editor__tags">
-                            <ul>
+                            <ul class="editor__kids">
                                 <li>
                                     <a href="#kid1">
                                         <i class="fa fa-checked"></i>
@@ -98,138 +148,180 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="#" class="editor__button button button-black">Chọn hết</a>
-                        </div><!--.editor__tags-->
-                        <div id="photo-video" class="editor__tab tab">
+                            <a href="#" class="editor__button btn btn-default">Chọn hết</a>
+                        </div>
+                        <div id="photo-video" class="editor__tab tab active">
                             <a href="#" class="editor__button button">Uploads photo / Video</a>
                             <a href="#" class="editor__button button">Chose from facebook</a>
-                        </div><!--End #photo-video-->
+                        </div>
                         <div id="write-post" class="editor__tab tab">
-                            <textarea name="editor__content" placeholder="Quick content here"></textarea>
-                        </div><!--End #photo-video-->
+                            <textarea name="editor__contentn" class="form-control" placeholder="Quick content here"></textarea>
+                        </div>
                         <div id="story" class="editor__tab tab">
                             <div class="editor__mce">Just a placehold for editor tab</div>
-                        </div><!--End #photo-video-->
-                    </div><!-- .editor__post-->
-
-
-                    <div class="post__footer">
-                        <span class="post__location">
-                            <p><i class="fa fa-mapmarker"></i> Yen Bai</p>
-                            <p><i class="fa fa-clock"></i> July, 11, 2017</p>
-                        </span>
-                        <button type="button" class="post__button button button-post">post</button>
-
-                    </div><!--.post__footer-->
-                    
-                </div><!--.post-->
-                
-                <article class="article">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 article__time">
-                                <ul class="article__baby">
-                                    <li data-event="#soc">
-                                        <strong>Sóc</strong>
-                                        <p>1 year and 2 months</p>
-                                    </li>
-                                    <li data-event="#bo">
-                                        <strong>Bo</strong>
-                                        <p>1 year and 2 months</p>
-                                    </li>
-                                </ul>
-                            </div><!-- .time-event-->
-
-                            <div class="article__detail col-md-8">
-                                
-                                <div class="article__content">
-                                    <span class="article__thumb"><img src="demo-image/img1.jpg"></span>
-                                    <div class="article__text">
-                                        <p>Can we take second to image Harry's face when he sees his mom today?</p>
-                                        <p>When they hug for the first time in ages. His eyes will be all wide and his smile, pricesless :')</p>
-                                    </div><!--.text-logs-->
-                                    
-                                    <div class="article__action">
-                                        <ul class="article__action--left text-left">
-                                            <li data-action="heart" data-heart="10"><i class="fa fa-heart"></i></li>
-                                            <li data-action="comment"><i class="fa fa-commenting"></i></li>
-                                        </ul>
-
-                                        <div class="article__location">
-                                            <p>Hà Nội — July 12, 2017</p>
-                                        </div><!--.location-time-->
-                                    </div><!--.logs-action-->
-
-                                </div><!--.content-->
-
-                                <div class="article__box">
-                                    
-                                    <div class="article__love">
-                                        <ul>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#"><img src="demo-image/user.png"></a></li>
-                                             <li><a href="#">9+</a></li>
-                                         </ul>
-                                         <a href="#hide">hide</a>
-                                    </div><!--.love-box-->
-                                    
-                                    <div class="comments">
-                                        <ul class="comments__list">
-                                            <li class="comments__item">
-                                                <a class="comments__avatar" href="#"><img src="demo-image/user.png"></a>
-                                                <div class="comments__text">
-                                                   <p> <a href="#">Hoàng Kiếm</a>: Thanh niên đi ăn cỗ tranh thủ :D</p>
-                                                   <time datetime="2011-01-12">January 12th, 2011</time>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="comments__input">
-                                             <a class="comments__input-avatar" href="#"><img src="demo-image/user.png"></a>
-                                             <form action="#" method="post">
-                                                 <input type="hidden" name="user-id" value="1">
-                                                 <input type="hidden" name="event-id" value="10">
-                                                 <input type="text" name="comment-text" class="input-comment">
-                                             </form>
-                                        </div><!--.comment-input-->
-                                    </div><!--.comment-box-->
-
-                                </div><!--.action-box-->
-
-
-
-                            </div><!--.detail-event-->
-                        </div><!--.row-->
+                        </div>
                     </div>
-                </article>
 
-            </div><!---.container-->
 
-        </div><!--.kidslogs__left-->
+                    <div class="editor__footer">
+                        <span class="editor__location">
+                            <p><i class="fa fa-mapmarker"></i> Yên Bái</p>
+                            <p><i class="fa fa-clock"></i> 03 tháng 8, 2018</p>
+                        </span>
+                        <button type="button" class="post__button button button-post">Đăng Bài</button>
+                    </div>
+                    
+                </div>
+               
+            </div>
 
-        <div class="kidslogs__right">
-            <ul class="archive">
-                <li><a href="#now">Now</a></li>
-                <li><a href="#2year">2 Years</a></li>
-                <li class="archive__item archive__item--havesub explan"><a href="#1year">1 Years</a>
-                    <ul class="archive__sub">
-                        <li><a href="#april">April</a></li>
-                        <li><a href="#march">March</a></li>
-                        <li><a href="#feb">Feb</a></li>
-                        <li><a href="#jan">January</a></li>
-                    </ul>
-                </li>
-                <li class="archive__item"><a href="#born">Born</a></li>
-            </ul>
-        </div><!-- event-archive-->
+            <!-- Start blog items -->
+            <article id="post-22" class="post">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="post__time col-md-2">
+                            <ul class="post__tag">
+                                <li data-event="#soc">
+                                    <strong>Sóc</strong>
+                                    <p>1 năm 2 tháng</p>
+                                </li>
+                                <li data-event="#bo">
+                                    <strong>Bo</strong>
+                                    <p>1 năm 1 tháng</p>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="post__detail col-md-8">
+            
+                            <div class="post__content">
+                                <div class="post__thumb">
+                                    <img src="demo-image/img1.jpg">
+                                </div>
 
-    </div><!-- .kidslogs__right -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
+                                <div class="post__text">
+                                    <p>Can we take second to image Harry's face when he sees his mom today?</p>
+                                    <p>When they hug for the first time in ages. His eyes will be all wide and his smile, pricesless :')</p>
+                                </div>
+            
+                                <div class="post__action">
+                                    
+                                    <ul class="post__action--left text-left">
+                                        <li data-action="heart" data-heart="10">
+                                            <i class="fa fa-heart"></i>
+                                        </li>
+                                        <li data-action="comment">
+                                            <i class="fa fa-commenting"></i>
+                                        </li>
+                                    </ul>
+            
+                                    <div class="post__location">
+                                        <p>Hà Nội — July 12, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__box">
+            
+                                <div class="post__love">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">9+</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#hide">Ẩn đi</a>
+                                </div>
+            
+                                <div class="post__comments">
+                                    
+                                    <ul class="post__comments__list">
+                                        <li class="post__comment__item">
+                                            <a class="comments__avatar" href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                            <div class="comments__text">
+                                                <p>
+                                                    <a href="#">Hoàng Kiếm</a>: Thanh niên đi ăn cỗ tranh thủ :D</p>
+                                                <time datetime="2011-01-12">January 12th, 2011</time>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="post__comments__input">
+                                        <a class="post__comments__avatar" href="#">
+                                            <img src="demo-image/user.png">
+                                        </a>
+                                        <form class="post__comments__form" action="#" method="post">
+                                            <input type="hidden" name="user-id" value="1">
+                                            <input type="hidden" name="event-id" value="10">
+                                            <textarea name="comment-text" class="input-comment form-control" placeholder="Comment của bạn."></textarea>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Start times -->
+            <div class="times">
+                <ul class="times__list">
+                    <li class="times__item"><a href="#now">Now</a></li>
+                    <li class="times__item"><a href="#2year">2 Years</a></li>
+                    <li class="times__item"><a href="#1year">1 Years</a>
+                        <ul class="times__sub">
+                            <li class="times__item"><a href="#april">April</a></li>
+                            <li class="times__item"><a href="#march">March</a></li>
+                            <li class="times__item"><a href="#feb">Feb</a></li>
+                            <li class="times__item"><a href="#jan">January</a></li>
+                        </ul>
+                    </li>
+                    <li class="times__item"><a href="#born">Born</a></li>
+                </ul>
+            </div>
+        
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>

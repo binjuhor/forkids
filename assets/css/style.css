@@ -1,2 +1,94 @@
-html {
-  display: block; }
+.topbar__avatar {
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #e2e2e2; }
+
+.kids__item a {
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.6); }
+
+/**
+ * 01. Style for all site
+ **/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(74, 74, 74, 0.89);
+  background: #f5f5f5; }
+
+/**
+ * 02. Header
+ **/
+.topbar {
+  display: inline-block;
+  width: 100%;
+  background: #80b33a; }
+  .topbar .row {
+    min-height: 3.75rem;
+    position: relative; }
+  .topbar__infomation {
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    .topbar__infomation p {
+      color: rgba(74, 74, 74, 0.89);
+      display: inline-block;
+      font-size: 0.875rem; }
+  .topbar__avatar {
+    display: inline-block;
+    border: none; }
+
+/**
+ * 03. Times block
+ **/
+.times {
+  position: fixed;
+  top: 16.875rem;
+  right: 0px;
+  min-width: 14.375rem;
+  text-align: left; }
+  .times__list {
+    padding-left: 1.5625rem;
+    color: #80b33a;
+    position: relative; }
+    .times__list:before {
+      content: "";
+      background-image: linear-gradient(to bottom, rgba(74, 74, 74, 0.89) 40%, rgba(255, 255, 255, 0) 10%);
+      background-position: left;
+      background-size: 0.125rem 0.3125rem;
+      background-repeat: repeat-y;
+      width: 0.125rem;
+      height: 85%;
+      position: absolute;
+      left: 0.65625rem;
+      top: 1.25rem;
+      z-index: 1; }
+    .times__list a {
+      color: rgba(74, 74, 74, 0.89); }
+      .times__list a:hover {
+        font-weight: bold;
+        color: #80b33a;
+        text-decoration: none; }
+  .times__sub {
+    list-style: none;
+    padding-left: 0; }
+  .times__item {
+    position: relative;
+    z-index: 2;
+    line-height: 1.875rem; }
+
+/**
+ * 04. Kids list
+ **/
+.kids {
+  display: inline-block;
+  margin-top: 6.5625rem; }
+  .kids__list {
+    list-style: none;
+    padding-left: 0; }
+  .kids__item {
+    display: inline-block;
+    margin-right: 3.125rem; }
+    .kids__item a {
+      border: 0.3125rem solid #fff;
+      border-radius: 50%;
+      display: block;
+      position: relative;
+      overflow: hidden; }

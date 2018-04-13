@@ -1,4 +1,110 @@
-html{
-    display:block;
-   
+@import 'rem';
+@import 'variable';
+
+/**
+ * 01. Style for all site
+ **/
+body{
+    font-family: $body-font;
+    color: $body-color;
+    background: $bg-body;
 }
+
+/**
+ * 02. Header
+ **/
+.topbar{
+    display: inline-block;
+    width:100%;
+    background: $main-color;
+    .row{
+        min-height: $header-height;
+        position: relative;
+    }
+    &__infomation{
+        position: absolute;
+        right: 0px;
+        top:0px;
+        p{
+            color: $body-color;
+            display: inline-block;
+            font-size: rem(14px);
+        }
+    }
+    &__avatar{
+        @extend %border-radius;
+        display: inline-block;
+        border:none;
+    } 
+}
+
+/**
+ * 03. Times block
+ **/
+.times{
+    position:fixed;
+    top: rem(270px);
+    right: 0px;
+    min-width: rem(230px);
+    text-align: left;
+    &__list{
+        padding-left:rem(25px);
+        color: $main-color;
+        position: relative;
+        &:before{
+            content:"";
+            background-image: linear-gradient(to bottom, $body-color 40%, rgba(255, 255, 255, 0) 10%);
+            background-position: left;
+            background-size: rem(2px) rem(5px);
+            background-repeat: repeat-y;
+
+            width:rem(2px);
+            height: 85%;
+            position: absolute;
+            left: rem(10.5px);
+            top:rem(20px);
+            z-index: 1;;
+        }
+        a{
+            color: $body-color;
+            &:hover{
+                font-weight: bold;
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+    }
+    &__sub{
+        list-style: none;
+        padding-left: 0;
+    }
+    &__item{
+        position: relative;
+        z-index: 2;
+        line-height: rem(30px);
+    }
+}
+
+/**
+ * 04. Kids list
+ **/
+ .kids{
+    display: inline-block;
+    margin-top: rem(105px);
+    &__list{
+        list-style: none;
+        padding-left: 0;
+    }
+    &__item{
+        display: inline-block;
+        margin-right: rem(50px);
+        a{
+            @extend %box-shadow;
+            border:rem(5px) solid $white;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+ }
