@@ -1,3 +1,10 @@
+/**
+ * A blog for my kids
+ *
+ * @author: Binjuhor - binjuhor@gmail.com
+ * @version: 1.0.0
+ **/
+
 @import 'rem';
 @import 'variable';
 
@@ -10,6 +17,14 @@ body{
     background: $bg-body;
 }
 
+a{
+    color: $link-color;
+    &:hover{
+        color: $active-color;
+        text-decoration: none;
+    } 
+}
+
 /**
  * 02. Header
  **/
@@ -17,20 +32,24 @@ body{
     display: inline-block;
     width:100%;
     background: $main-color;
+
     .row{
         min-height: $header-height;
         position: relative;
     }
+
     &__infomation{
         position: absolute;
         right: 0px;
         top:0px;
+
         p{
             color: $body-color;
             display: inline-block;
             font-size: rem(14px);
         }
     }
+
     &__avatar{
         @extend %border-radius;
         display: inline-block;
@@ -47,6 +66,7 @@ body{
     right: 0px;
     min-width: rem(230px);
     text-align: left;
+
     &__list{
         padding-left:rem(25px);
         color: $main-color;
@@ -65,6 +85,7 @@ body{
             top:rem(20px);
             z-index: 1;;
         }
+
         a{
             color: $body-color;
             &:hover{
@@ -74,10 +95,12 @@ body{
             }
         }
     }
+
     &__sub{
         list-style: none;
         padding-left: 0;
     }
+
     &__item{
         position: relative;
         z-index: 2;
@@ -91,10 +114,12 @@ body{
  .kids{
     display: inline-block;
     margin-top: rem(105px);
+
     &__list{
         list-style: none;
         padding-left: 0;
     }
+
     &__item{
         display: inline-block;
         margin-right: rem(50px);
@@ -108,3 +133,195 @@ body{
         }
     }
  }
+
+ /**
+  *05. Fillter event
+  **/
+  .fillters{
+        &__title{
+            width: rem(90px);
+            height: rem(90px);
+            display: inline-block;
+            line-height: rem(70px);
+            border: rem(10px) solid $active-color;
+            border-radius: 50%;
+            text-align: center;
+            color:$white;;
+            background: $main-color;
+        }
+
+        &__list{
+            display: inline-block;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        &__item{
+            display: inline-block;
+            margin-left: rem(30px);
+            margin-right: rem(10px);
+            width:rem(30px);
+            height: rem(30px);
+            border-radius: 50%;
+            background: $active-color;
+            text-align: center;
+            line-height: rem(30px);
+            transition: all .3s;
+            a{
+                display: inline-block;
+                color:$white;
+            }
+            &:hover{
+                background: $main-color;
+            }
+        }
+  }
+
+/**
+ * 06. Editors
+ **/
+
+ #editor__toolbar{
+    @extend %border-radius;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+}
+ .editor{
+    @extend %border-radius;
+    position: relative;
+    overflow: hidden;
+    background: $white;
+    margin-bottom: rem(30px);
+    &__header{
+       @extend  %box-bar;
+    }
+    &__item{
+        padding-left: rem(35px);
+        padding-right: rem(35px);
+        display: inline-flex;
+        position: relative;
+        &::after{
+            content:"";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: rem(29px);
+            width: rem(1px);
+            background: $border-color;
+        }
+        &.active{
+            color: $active-color;
+        }
+    }
+    &__tags{
+        display: inline-block;
+        width:100%;
+        position: relative;
+        padding-top: rem(15px);
+        margin-left: rem(-15px);
+        margin-right: rem(-15px);
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+        border-bottom: rem(1px) solid $border-color;
+        box-sizing: content-box;
+        margin-bottom: rem(15px);
+        .btn{
+            position: absolute;
+            right:rem(15px);
+            top:rem(15px);
+        }
+    }
+    &__kids{
+        display: inline-block;
+        padding-left: 0;
+        list-style: none;
+        li{
+            display: inline-block;
+            margin-right: rem(30px);
+            position: relative;
+            .svg-inline--fa{
+                position: absolute;
+                left: rem(-5px);
+                bottom: rem(-5px);
+            }
+            &.active{
+                .svg-inline--fa{
+                    color: $active-color;
+                }
+            }
+        }
+    }
+    &__tab{
+        display: none;
+        min-height: rem(90px);
+        margin-bottom: rem(15px);
+        &.active{
+            display: inline-block;
+            flex-shrink: 0;
+            flex-grow: 1;
+            flex: 0;
+            width: 100%;
+            a.btn{
+                display: inline-block;
+                height: auto;
+                width:48.6%;
+                margin-right: rem(15px);
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        form{
+            float: left;
+            width: 100%;
+            textarea{
+                min-height: rem(100px);
+            }
+        }
+    }
+    &__quill{
+        width:100%;
+        @extend %border-radius;
+        border-top-left-radius:0;
+        border-top-right-radius:0;
+        min-height: rem(250px);
+        *{
+            border-color: $border-color;
+        }
+    }
+    &__content{
+        min-height: rem(90px);
+        @extend %border-radius;
+    }
+    &__location{
+        p{
+            display: inline-block;
+            padding:0 rem(20px);
+            margin-bottom: 0;
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+    &__button{
+        background: $main-color;
+        color: $white;
+        &--post{
+            border-radius:0;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            padding-left: rem(35px);
+            padding-right: rem(35px);
+            line-height: rem(30px);
+        }
+        &:hover{
+            color: $white;
+            background: $active-color;
+        }
+    }
+    &__footer{
+        @extend  %box-bar;
+    }
+}
