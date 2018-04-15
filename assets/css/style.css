@@ -4,7 +4,7 @@
  * @author: Binjuhor - binjuhor@gmail.com
  * @version: 1.0.0
  **/
-.topbar__avatar, #editor__toolbar, .editor, .editor__quill, .editor__content, .post__content, .post__love ul li, .post__conmentbox {
+.topbar__avatar, #editor__toolbar, .editor, .editor__quill, .editor__content, .post__content, .post__love ul li, .post__conmentbox, .comments__avatar {
   border-radius: 0.3125rem;
   border: 0.0625rem solid #e2e2e2;
   transition: all .3s; }
@@ -358,3 +358,41 @@ a {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0; }
+
+.comments__item {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  padding-left: 3.125rem;
+  position: relative; }
+  .comments__item--input {
+    border-bottom: none;
+    margin-bottom: 0; }
+    .comments__item--input textarea {
+      height: 2.5rem; }
+
+.comments__avatar {
+  display: inline-block;
+  width: 2.375rem;
+  height: 2.375rem;
+  position: absolute;
+  left: 0;
+  overflow: hidden; }
+  .comments__avatar img {
+    width: 100%;
+    height: auto; }
+
+.comments__text {
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+  .comments__text time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.75rem; }
+
+.comments__auth {
+  display: inline-block; }

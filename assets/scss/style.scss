@@ -11,6 +11,7 @@
 /**
  * 01. Style for all site
  **/
+
 body{
     font-family: $body-font;
     color: $body-color;
@@ -28,6 +29,7 @@ a{
 /**
  * 02. Header
  **/
+
 .topbar{
     display: inline-block;
     width:100%;
@@ -60,6 +62,7 @@ a{
 /**
  * 03. Times block
  **/
+
 .times{
     position:fixed;
     top: rem(270px);
@@ -110,6 +113,7 @@ a{
 /**
  * 04. Kids list
  **/
+
  .kids{
     display: inline-block;
     margin-top: rem(105px);
@@ -136,52 +140,52 @@ a{
  /**
   *05. Fillter event
   **/
-  .fillters{
-        &__title{
-            width: rem(90px);
-            height: rem(90px);
+.fillters{
+    &__title{
+        width: rem(90px);
+        height: rem(90px);
+        display: inline-block;
+        line-height: rem(70px);
+        border: rem(10px) solid $active-color;
+        border-radius: 50%;
+        text-align: center;
+        color:$white;;
+        background: $main-color;
+    }
+
+    &__list{
+        display: inline-block;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__item{
+        display: inline-block;
+        margin-left: rem(30px);
+        margin-right: rem(10px);
+        width:rem(30px);
+        height: rem(30px);
+        border-radius: 50%;
+        background: $active-color;
+        text-align: center;
+        line-height: rem(30px);
+        transition: all .3s;
+        &.active{
+            a{
+                font-weight: bold;
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+        a{
             display: inline-block;
-            line-height: rem(70px);
-            border: rem(10px) solid $active-color;
-            border-radius: 50%;
-            text-align: center;
-            color:$white;;
+            color:$white;
+        }
+        &:hover{
             background: $main-color;
         }
-
-        &__list{
-            display: inline-block;
-            padding-left: 0;
-            list-style: none;
-        }
-
-        &__item{
-            display: inline-block;
-            margin-left: rem(30px);
-            margin-right: rem(10px);
-            width:rem(30px);
-            height: rem(30px);
-            border-radius: 50%;
-            background: $active-color;
-            text-align: center;
-            line-height: rem(30px);
-            transition: all .3s;
-            &.active{
-                a{
-                    font-weight: bold;
-                    color: $main-color;
-                    text-decoration: none;
-                }
-            }
-            a{
-                display: inline-block;
-                color:$white;
-            }
-            &:hover{
-                background: $main-color;
-            }
-        }
-  }
+    }
+}
 
 /**
  * 06. Editors
@@ -335,6 +339,7 @@ a{
 /**
  * 07. post
 **/
+
 .post{
     margin-bottom: rem(30px);
     &__detail{
@@ -441,20 +446,61 @@ a{
 
     }
 }
+
 /**
  *  08.Comment
  **/
- .comments{
+
+.comments{
     &__list{
         display: inline-block;
         width: 100%;
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
-
     }
     &__item{
-        
+        width:100%;
+        list-style: none;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: rem(15px);
+        margin-bottom: rem(15px);
+        padding-left: rem(50px);
+        position: relative;
+        &--input{
+            border-bottom: none;
+            margin-bottom: 0;
+            textarea{
+                height: rem(40px);
+            }
+        }
     }
-    
- }
+    &__avatar{
+        display: inline-block;
+        width:rem(38px);
+        height: rem(38px);
+        @extend %border-radius;
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+    &__text{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        time{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: rem(12px);
+        }
+    }
+    &__auth{
+        display: inline-block;
+    }
+
+}
