@@ -84,8 +84,7 @@ a{
             left: rem(10.5px);
             top:rem(20px);
             z-index: 1;;
-        }
-
+        }        
         a{
             color: $body-color;
             &:hover{
@@ -167,6 +166,13 @@ a{
             text-align: center;
             line-height: rem(30px);
             transition: all .3s;
+            &.active{
+                a{
+                    font-weight: bold;
+                    color: $main-color;
+                    text-decoration: none;
+                }
+            }
             a{
                 display: inline-block;
                 color:$white;
@@ -325,3 +331,130 @@ a{
         @extend  %box-bar;
     }
 }
+
+/**
+ * 07. post
+**/
+.post{
+    margin-bottom: rem(30px);
+    &__detail{
+       
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__content{
+        @extend %border-radius;
+        background:$white;
+    }
+    &__thumb{
+        margin-bottom: rem(20px);
+        width:100%;
+        img{
+            position: relative;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &--thumb{
+        .post__thumb{
+            img{
+                width:100%;
+                height: auto;
+            }
+        }
+    }
+    &__text{
+        padding-left:rem(15px);
+        padding-right:rem(15px);
+        margin-bottom: rem(20px);
+    }
+    &__action{
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+        &--left{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-right:rem(15px);
+            cursor: pointer;
+            transition: all .3s;
+            &:hover{
+                color: $btn-action;
+            }
+        }
+    }
+    &__location{
+        display: inline-block;
+    }
+    &__love{
+        position: relative;
+        ul{
+            display: inline-block;
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+            li{
+                @extend %border-radius;
+                display: inline-block;
+                margin-right: rem(5px);
+                width: rem(38px);
+                height: rem(38px);
+                overflow: hidden;
+                &:last-child{
+                    border:none;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__box{
+        width: 100%;
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+       
+    }
+    &__conmentbox{
+        @extend %border-radius;
+        border-top: none;
+        padding-top: rem(15px);
+        background: $white;
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-bottom: rem(15px);
+    }
+    &__hidden{
+        position: absolute;
+        top:0;
+        right:0;
+        font-size: rem(14px);
+
+    }
+}
+/**
+ *  08.Comment
+ **/
+ .comments{
+    &__list{
+        display: inline-block;
+        width: 100%;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+    }
+    &__item{
+        
+    }
+    
+ }

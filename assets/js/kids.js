@@ -1,6 +1,6 @@
 (function($){
     'use strict';
-
+    
     /**
      * Tab for status post
      */
