@@ -65,11 +65,11 @@
             <!-- Start fillters -->
             <div class="row fillters justify-content-end">
 
-                <div class="col-md-2 text-right">
+                <div class="col-md-3 text-right">
                     <div class="fillters__title">Sự Kiện</div>
                 </div>
                 <div class="col-md-8">
-                    <ul class="fillters__list">
+                    <ul class="fillters__list align-self-center">
                         <li class="fillters__item">
                             <a href="#">
                                 <i class="far fa-smile"></i>
@@ -110,79 +110,80 @@
             </div>
 
             <!-- Start editor -->
-            <div class="row justify-content-end">
-                <div class="post__time col-md-2">
-                    
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="post__time post__time--lineup col-md-3">
+                        <ul class="post__tags"></ul>
+                    </div>
+    
+                    <div class="editor col-md-8">
+                        <div class="editor__header">
+                            <a class="editor__item tab-button active" href="#photo-video">Photo / Video</a>
+                            <a class="editor__item tab-button" href="#write-post">Đăng Status</a>
+                            <a class="editor__item tab-button" href="#story">Câu truyện</a>
+                        </div>
+    
+                        <div class="editor__post">
+                            <div class="editor__tags">
+                                <p>Liên quan đến nhóc?</p>
+                                <ul class="editor__kids">
+                                    <li class="active">
+                                        <a href="#kid1">
+                                            <i class="far fa-check-circle"></i>
+                                            <img src="demo-image/kid-small.jpg">
+                                            <caption>Sóc</caption>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#kid1">
+                                            <img src="demo-image/kid-small.jpg">
+                                            <caption>Bo</caption>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#kid1">
+                                            <img src="demo-image/kid-small.jpg">
+                                            <caption>Bống</caption>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-dark">Chọn hết</a>
+                            </div>
+                            <div id="photo-video" class="editor__tab tab active">
+                                <a href="#" class="editor__button btn btn-default">Uploads photo / Video</a>
+                                <a href="#" class="editor__button btn btn-default">Chose from facebook</a>
+                            </div>
+                            <div id="write-post" class="editor__tab tab">
+                                <form action="#" id="status-post">
+                                    <div class="editor__content" id="editor__content">Status của ngày ...</div>
+                                </form>
+                            </div>
+                            <div id="story" class="editor__tab tab">
+                                <form action="#" id="story-post">
+                                    <div class="editor__quill">Mẩu truyện của ngày ...</div>
+                                </form>
+                            </div>
+                        </div>
+    
+    
+                        <div class="editor__footer">
+                            <span class="editor__location">
+                                <p><i class="fas fa-map-marker-alt"></i> Yên Bái</p>
+                                <p><i class="far fa-clock"></i> 03 tháng 8, 2018</p>
+                            </span>
+                            <a href="#" id="post-content" class="editor__button editor__button--post btn btn-default">Đăng Bài</a>
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <div class="editor col-md-8">
-                    <div class="editor__header">
-                        <a class="editor__item tab-button active" href="#photo-video">Photo / Video</a>
-                        <a class="editor__item tab-button" href="#write-post">Đăng Status</a>
-                        <a class="editor__item tab-button" href="#story">Câu truyện</a>
-                    </div>
-
-                    <div class="editor__post">
-                        <div class="editor__tags">
-                            <p>Liên quan đến nhóc?</p>
-                            <ul class="editor__kids">
-                                <li class="active">
-                                    <a href="#kid1">
-                                        <i class="far fa-check-circle"></i>
-                                        <img src="demo-image/kid-small.jpg">
-                                        <caption>Sóc</caption>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#kid1">
-                                        <img src="demo-image/kid-small.jpg">
-                                        <caption>Bo</caption>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#kid1">
-                                        <img src="demo-image/kid-small.jpg">
-                                        <caption>Bống</caption>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-dark">Chọn hết</a>
-                        </div>
-                        <div id="photo-video" class="editor__tab tab active">
-                            <a href="#" class="editor__button btn btn-default">Uploads photo / Video</a>
-                            <a href="#" class="editor__button btn btn-default">Chose from facebook</a>
-                        </div>
-                        <div id="write-post" class="editor__tab tab">
-                            <form action="#" id="status-post">
-                                <div class="editor__content" id="editor__content">Status của ngày ...</div>
-                            </form>
-                        </div>
-                        <div id="story" class="editor__tab tab">
-                            <form action="#" id="story-post">
-                                <div class="editor__quill">Mẩu truyện của ngày ...</div>
-                            </form>
-                        </div>
-                    </div>
-
-
-                    <div class="editor__footer">
-                        <span class="editor__location">
-                            <p><i class="fas fa-map-marker-alt"></i> Yên Bái</p>
-                            <p><i class="far fa-clock"></i> 03 tháng 8, 2018</p>
-                        </span>
-                        <a href="#" id="post-content" class="editor__button editor__button--post btn btn-default">Đăng Bài</a>
-                    </div>
-                    
-                </div>
-               
             </div>
 
             <!-- Start blog items -->
             <article id="post-22" class="post post--thumb">
                 <div class="container">
                     <div class="row justify-content-end">
-                        <div class="post__time col-md-2">
-                            <ul class="post__tag">
+                        <div class="post__time col-md-3">
+                            <ul class="post__tags">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
