@@ -8,7 +8,7 @@
  * 02. Header
  * 03. Times block
  * 04. Kids list
- * 05. Fillter event
+ * 05. Fillters event
  * 06. Editors
  * 07. post
  * 08.Comment
@@ -132,7 +132,7 @@ a {
       overflow: hidden; }
 
 /**
-  * 05. Fillter event
+  * 05. Fillters event
   **/
 .fillters {
   position: relative;
@@ -167,10 +167,11 @@ a {
     text-align: center;
     line-height: 1.875rem;
     transition: all .3s; }
-    .fillters__item.active a {
-      font-weight: bold;
-      color: #80b33a;
-      text-decoration: none; }
+    .fillters__item.active {
+      background: #80b33a; }
+      .fillters__item.active a {
+        font-weight: bold;
+        text-decoration: none; }
     .fillters__item a {
       display: inline-block;
       color: #fff; }
@@ -229,12 +230,14 @@ a {
       display: inline-block;
       margin-right: 1.875rem;
       position: relative; }
-      .editor__kids li .svg-inline--fa {
+      .editor__kids li .fa {
+        display: none;
         position: absolute;
-        left: -0.3125rem;
-        bottom: -0.3125rem; }
-      .editor__kids li.active .svg-inline--fa {
-        color: #bbd896; }
+        top: 0.625rem;
+        left: -0.625rem; }
+      .editor__kids li.active .fa {
+        display: inline-block;
+        color: #80b33a; }
   .editor__tab {
     display: none;
     min-height: 5.625rem;
@@ -273,10 +276,10 @@ a {
     margin-bottom: 0; }
     .editor__location p:first-child {
       padding-left: 0; }
-  .editor__button {
+  .editor__btn {
     background: #80b33a;
     color: #fff; }
-    .editor__button--post {
+    .editor__btn--post {
       border-radius: 0;
       position: absolute;
       right: 0;
@@ -284,7 +287,9 @@ a {
       padding-left: 2.1875rem;
       padding-right: 2.1875rem;
       line-height: 1.875rem; }
-    .editor__button:hover {
+    .editor__btn--select {
+      font-size: 0.875rem; }
+    .editor__btn:hover {
       color: #fff;
       background: #bbd896; }
 

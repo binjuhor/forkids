@@ -8,7 +8,7 @@
  * 02. Header
  * 03. Times block
  * 04. Kids list
- * 05. Fillter event
+ * 05. Fillters event
  * 06. Editors
  * 07. post
  * 08.Comment
@@ -20,7 +20,6 @@
 /**
  * 01. Style for all site
  **/
-
 body{
     font-family: $body-font;
     color: $body-color;
@@ -38,7 +37,6 @@ a{
 /**
  * 02. Header
  **/
-
 .topbar{
     display: inline-block;
     width:100%;
@@ -71,7 +69,6 @@ a{
 /**
  * 03. Times block
  **/
-
 .times{
     position:fixed;
     top: rem(200px);
@@ -119,7 +116,6 @@ a{
 /**
  * 04. Kids list
  **/
-
  .kids{
     display: inline-block;
     margin-top: rem(105px);
@@ -145,7 +141,7 @@ a{
  }
 
  /**
-  * 05. Fillter event
+  * 05. Fillters event
   **/
 .fillters{
     position: relative;
@@ -183,9 +179,9 @@ a{
         line-height: rem(30px);
         transition: all .3s;
         &.active{
+            background: $main-color;
             a{
                 font-weight: bold;
-                color: $main-color;
                 text-decoration: none;
             }
         }
@@ -202,12 +198,12 @@ a{
 /**
  * 06. Editors
  **/
-
- #editor__toolbar{
+#editor__toolbar{
     @extend %border-radius;
     border-top-left-radius:0;
     border-top-right-radius:0;
 }
+
 .editor{
     @extend %border-radius;
     position: relative;
@@ -262,14 +258,16 @@ a{
             display: inline-block;
             margin-right: rem(30px);
             position: relative;
-            .svg-inline--fa{
+            .fa{
+                display: none;
                 position: absolute;
-                left: rem(-5px);
-                bottom: rem(-5px);
+                top: rem(10px);
+                left: rem(-10px);
             }
             &.active{
-                .svg-inline--fa{
-                    color: $active-color;
+                .fa{
+                    display: inline-block;
+                    color: $main-color;
                 }
             }
         }
@@ -327,7 +325,7 @@ a{
             }
         }
     }
-    &__button{
+    &__btn{
         background: $main-color;
         color: $white;
         &--post{
@@ -338,6 +336,9 @@ a{
             padding-left: rem(35px);
             padding-right: rem(35px);
             line-height: rem(30px);
+        }
+        &--select{
+            font-size: rem(14px);
         }
         &:hover{
             color: $white;
@@ -352,7 +353,6 @@ a{
 /**
  * 07. post
 **/
-
 .post{
     padding-bottom: rem(30px);
     position: relative;

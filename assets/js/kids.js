@@ -53,17 +53,75 @@
     });
 
     /**
-     * Action to show comment and heart
+     * Action to show comment
      */
     $('body').on('click','[data-action="comment"]', function(e){
         e.preventDefault();
-        var thisPostBox = $(this).closest('.post').find('.post__box');
+        let thisPostBox = $(this).closest('.post').find('.post__box');
         if (thisPostBox.hasClass('post__box--hide')) {
             $(this).addClass('active');
             return thisPostBox.removeClass('post__box--hide');
         }
         $(this).removeClass('active');
         return thisPostBox.addClass('post__box--hide');
+    });
+
+    /**
+     * Action to show heart
+     */
+    $('body').on('click','[data-action="heart"]', function(e){
+        e.preventDefault();
+        let thisHeart = $(this).find('.fa');
+        $(this).addClass('active');
+        if (thisHeart.hasClass('fa-heart-o')) {
+            thisHeart.removeClass('fa-heart-o');
+            return thisHeart.addClass('fa-heart');
+        }
+        $(this).removeClass('active');
+        $(this).removeClass('fa-heart');
+        return thisHeart.addClass('fa-heart-o');
+    });
+
+    /**
+     * Select all kids to tags.
+     */
+    $('body').on('click','.select_all', function(e){
+        e.preventDefault();
+        if ($(this).hasClass('active-all')) {
+            $(this).removeClass('active-all');
+            return $('.editor__kids li').removeClass('active');
+        }
+        $(this).addClass('active-all');
+        $('.editor__kids li').addClass('active');
+    });
+
+    $('body').on('click', '.editor__kids li a', function (e) {
+        e.preventDefault();
+        let kid = $(this).closest('li');
+        if ( kid.hasClass('active') ) {
+            return kid.removeClass('active');
+        }
+        return kid.addClass( 'active' );
+    });
+
+    /**
+     * Fillter click
+     */
+    $('body').on('click','.fillters__item a', function(e){
+        e.preventDefault();
+        let fillter = $(this).closest('li');
+        if (fillter.hasClass('active')) {
+            return fillter.removeClass('active');
+        }
+        return fillter.addClass('active');
+    });
+
+    /**
+     * Post
+     */
+    $('body').on('click','.editor__btn--post', function(e){
+        e.preventDefault();
+        console.log('Post content');
     });
 
 })(jQuery);
