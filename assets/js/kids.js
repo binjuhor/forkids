@@ -40,7 +40,30 @@
         readOnly: false,
         theme: 'snow'
     };
-    let story = new Quill('.editor__quill', options); 
-    let status = new Quill('.editor__content'); 
+    let story  = new Quill('.editor__quill', options); 
+    let status = new Quill('.editor__content');
+
+    /**
+     * Hide comment.
+     */
+    $('body').on('click','.post__hidden', function(e){
+        e.preventDefault();
+        $(this).closest('.post__box').addClass('post__box--hide');
+        $(this).closest('.post').find('[data-action="comment"]').removeClass('active');
+    });
+
+    /**
+     * Action to show comment and heart
+     */
+    $('body').on('click','[data-action="comment"]', function(e){
+        e.preventDefault();
+        var thisPostBox = $(this).closest('.post').find('.post__box');
+        if (thisPostBox.hasClass('post__box--hide')) {
+            $(this).addClass('active');
+            return thisPostBox.removeClass('post__box--hide');
+        }
+        $(this).removeClass('active');
+        return thisPostBox.addClass('post__box--hide');
+    });
 
 })(jQuery);

@@ -75,7 +75,7 @@ a {
  **/
 .times {
   position: fixed;
-  top: 16.875rem;
+  top: 12.5rem;
   right: 0px;
   min-width: 14.375rem;
   text-align: left; }
@@ -269,6 +269,7 @@ a {
   .editor__location p {
     display: inline-block;
     padding: 0 1.25rem;
+    font-size: 0.875rem;
     margin-bottom: 0; }
     .editor__location p:first-child {
       padding-left: 0; }
@@ -327,10 +328,11 @@ a {
       margin-right: 0.9375rem;
       cursor: pointer;
       transition: all .3s; }
-      .post__action li:hover {
+      .post__action li:hover, .post__action li.active {
         color: #d0021b; }
   .post__location {
-    float: right; }
+    float: right;
+    font-size: 0.875rem; }
   .post__love {
     position: relative;
     padding-bottom: 0.9375rem; }
@@ -355,6 +357,8 @@ a {
     width: 100%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; }
+    .post__box--hide {
+      display: none; }
   .post__conmentbox {
     border-top: none;
     padding-top: 0.9375rem;
@@ -378,13 +382,31 @@ a {
     z-index: 2; }
     .post__tags::before {
       content: "";
-      width: 1.25rem;
-      height: 1.25rem;
-      border-radius: 50%;
       background: #80b33a;
+      font-family: "FontAwesome";
       position: absolute;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.5625rem;
       top: 0.625rem;
-      right: 2.375rem; }
+      right: 2.1875rem; }
+    .post__tags--smile::before {
+      content: "\f118"; }
+    .post__tags--calendar::before {
+      content: "\f073"; }
+    .post__tags--star::before {
+      content: "\f005"; }
+    .post__tags--heart::before {
+      content: "\f004"; }
+    .post__tags--bell::before {
+      content: "\f0a2"; }
+    .post__tags--trip::before {
+      content: "\f39a"; }
+    .post__tags--wallet::before {
+      content: "\f1ee"; }
     .post__tags li {
       display: inline-block;
       width: 100%;

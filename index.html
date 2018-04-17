@@ -7,6 +7,8 @@
     <title>kidslogs.com</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <!-- Theme included stylesheets -->
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -71,37 +73,37 @@
                     <ul class="fillters__list align-self-center">
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="far fa-smile"></i>
+                                <i class="fa fa-smile-o"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="fab fa-tripadvisor"></i>
+                                <i class="fa fa-tripadvisor"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="far fa-star"></i>
+                                <i class="fa fa-star"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="fas fa-calendar-alt"></i>
+                                <i class="fa fa-calendar"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="fab fa-earlybirds"></i>
+                                <i class="fa fa-google-wallet"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="far fa-heart"></i>
+                                <i class="fa fa-heart-o"></i>
                             </a>
                         </li>
                         <li class="fillters__item">
                             <a href="#">
-                                <i class="far fa-lightbulb"></i>
+                                <i class="fa fa-bell-o"></i>
                             </a>
                         </li>
                     </ul>
@@ -119,16 +121,16 @@
                         <div class="editor__header">
                             <a class="editor__item tab-button active" href="#photo-video">Photo / Video</a>
                             <a class="editor__item tab-button" href="#write-post">Đăng Status</a>
-                            <a class="editor__item tab-button" href="#story">Câu truyện</a>
+                            <a class="editor__item tab-button" href="#story">Câu chuyện</a>
                         </div>
     
                         <div class="editor__post">
                             <div class="editor__tags">
-                                <p>Liên quan đến nhóc?</p>
+                                <p>Câu chuyện của?</p>
                                 <ul class="editor__kids">
                                     <li class="active">
                                         <a href="#kid1">
-                                            <i class="far fa-check-circle"></i>
+                                            <i class="fa fa-check-circle"></i>
                                             <img src="demo-image/kid-small.jpg">
                                             <caption>Sóc</caption>
                                         </a>
@@ -164,11 +166,10 @@
                             </div>
                         </div>
     
-    
                         <div class="editor__footer">
                             <span class="editor__location">
-                                <p><i class="fas fa-map-marker-alt"></i> Yên Bái</p>
-                                <p><i class="far fa-clock"></i> 03 tháng 8, 2018</p>
+                                <p><i class="fa fa-map-marker"></i> Yên Bái</p>
+                                <p><i class="fa fa-clock-o"></i> 03 tháng 8, 2018</p>
                             </span>
                             <a href="#" id="post-content" class="editor__button editor__button--post btn btn-default">Đăng Bài</a>
                         </div>
@@ -182,7 +183,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="post__time col-md-3">
-                            <ul class="post__tags">
+                            <ul class="post__tags post__tags--calendar">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
@@ -208,25 +209,25 @@
             
                                 <div class="post__action">
                                     
-                                    <ul class="post__action--left text-left pull-left">
+                                    <ul class="post__action--left text-left">
                                         <li data-action="heart" data-heart="10">
-                                            <i class="far fa-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </li>
                                         <li data-action="comment">
-                                            <i class="far fa-comment-alt"></i>
+                                            <i class="fa fa-comments-o"></i>
                                         </li>
                                     </ul>
             
-                                    <div class="post__location pull-right">
+                                    <div class="post__location">
                                         <p>Hà Nội — July 12, 2017</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="post__box">
+                            <div class="post__box post__box--hide">
                                 <div class="post__conmentbox">
                                     <div class="post__love">
-                                        <p>8 người thích điều này.</p>
+                                        <p>18 người thích điều này.</p>
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -311,7 +312,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="post__time col-md-3">
-                            <ul class="post__tags">
+                            <ul class="post__tags post__tags--star">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
@@ -337,22 +338,22 @@
             
                                 <div class="post__action">
             
-                                    <ul class="post__action--left text-left pull-left">
+                                    <ul class="post__action--left text-left">
                                         <li data-action="heart" data-heart="10">
-                                            <i class="far fa-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </li>
                                         <li data-action="comment">
-                                            <i class="far fa-comment-alt"></i>
+                                            <i class="fa fa-comments-o"></i>
                                         </li>
                                     </ul>
             
-                                    <div class="post__location pull-right">
+                                    <div class="post__location">
                                         <p>Hà Nội — July 12, 2017</p>
                                     </div>
                                 </div>
                             </div>
             
-                            <div class="post__box">
+                            <div class="post__box post__box--hide">
                                 <div class="post__conmentbox">
                                     <div class="post__love">
                                         <p>8 người thích điều này.</p>
@@ -427,7 +428,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="post__time col-md-3">
-                            <ul class="post__tags">
+                            <ul class="post__tags post__tags--smile">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
@@ -450,19 +451,40 @@
             
                                 <div class="post__action">
             
-                                    <ul class="post__action--left text-left pull-left">
+                                    <ul class="post__action--left text-left">
                                         <li data-action="heart" data-heart="10">
-                                            <i class="far fa-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </li>
                                         <li data-action="comment">
-                                            <i class="far fa-comment-alt"></i>
+                                            <i class="fa fa-comments-o"></i>
                                         </li>
                                     </ul>
             
-                                    <div class="post__location pull-right">
+                                    <div class="post__location">
                                         <p>Hà Nội — July 12, 2017</p>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="post__box post__box--hide">
+                                <div class="post__conmentbox">
+                            
+                                    <div class="comments">
+                            
+                                        <div class="comments__item comments__item--input">
+                                            <a class="comments__avatar" href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                            <form class="comments__form" action="#" method="post">
+                                                <input type="hidden" name="user-id" value="1">
+                                                <input type="hidden" name="event-id" value="10">
+                                                <textarea name="comment-text" class=" input-comment form-control" placeholder="Comment của bạn."></textarea>
+                                            </form>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
                             </div>
             
                         </div>
@@ -476,7 +498,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="post__time col-md-3">
-                            <ul class="post__tags">
+                            <ul class="post__tags post__tags--heart">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
@@ -497,22 +519,22 @@
         
                                 <div class="post__action">
             
-                                    <ul class="post__action--left text-left pull-left">
+                                    <ul class="post__action--left text-left">
                                         <li data-action="heart" data-heart="10">
-                                            <i class="far fa-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </li>
                                         <li data-action="comment">
-                                            <i class="far fa-comment-alt"></i>
+                                            <i class="fa fa-comments-o"></i>
                                         </li>
                                     </ul>
             
-                                    <div class="post__location pull-right">
+                                    <div class="post__location">
                                         <p>Hà Nội — July 12, 2017</p>
                                     </div>
                                 </div>
                             </div>
             
-                            <div class="post__box">
+                            <div class="post__box post__box--hide">
                                 <div class="post__conmentbox">
             
                                     <div class="comments">
@@ -543,7 +565,7 @@
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="post__time col-md-3">
-                            <ul class="post__tags">
+                            <ul class="post__tags post__tags--wallet">
                                 <li data-event="#soc">
                                     <strong>Sóc</strong>
                                     <p>1 năm 2 tháng</p>
@@ -564,19 +586,40 @@
             
                                 <div class="post__action">
             
-                                    <ul class="post__action--left text-left pull-left">
+                                    <ul class="post__action--left text-left">
                                         <li data-action="heart" data-heart="10">
-                                            <i class="far fa-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </li>
                                         <li data-action="comment">
-                                            <i class="far fa-comment-alt"></i>
+                                            <i class="fa fa-comments-o"></i>
                                         </li>
                                     </ul>
             
-                                    <div class="post__location pull-right">
+                                    <div class="post__location">
                                         <p>Hà Nội — July 12, 2017</p>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="post__box post__box--hide">
+                                <div class="post__conmentbox">
+                            
+                                    <div class="comments">
+                            
+                                        <div class="comments__item comments__item--input">
+                                            <a class="comments__avatar" href="#">
+                                                <img src="demo-image/user.png">
+                                            </a>
+                                            <form class="comments__form" action="#" method="post">
+                                                <input type="hidden" name="user-id" value="1">
+                                                <input type="hidden" name="event-id" value="10">
+                                                <textarea name="comment-text" class=" input-comment form-control" placeholder="Comment của bạn."></textarea>
+                                            </form>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
                             </div>
             
                         </div>
@@ -605,10 +648,9 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-    crossorigin="anonymous"></script>
     <!-- Main Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <!-- Main blog library -->
     <script src="assets/js/kids.js"></script>
 </body>
 </html>

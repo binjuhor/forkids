@@ -74,11 +74,10 @@ a{
 
 .times{
     position:fixed;
-    top: rem(270px);
+    top: rem(200px);
     right: 0px;
     min-width: rem(230px);
     text-align: left;
-
     &__list{
         padding-left:rem(25px);
         color: $main-color;
@@ -106,12 +105,10 @@ a{
             }
         }
     }
-
     &__sub{
         list-style: none;
         padding-left: 0;
     }
-
     &__item{
         position: relative;
         z-index: 2;
@@ -323,6 +320,7 @@ a{
         p{
             display: inline-block;
             padding:0 rem(20px);
+            font-size: rem(14px);
             margin-bottom: 0;
             &:first-child{
                 padding-left: 0;
@@ -404,13 +402,14 @@ a{
             margin-right:rem(15px);
             cursor: pointer;
             transition: all .3s;
-            &:hover{
+            &:hover, &.active{
                 color: $btn-action;
             }
         }
     }
     &__location{
         float: right;
+        font-size: rem(14px);
     }
     &__love{
         position: relative;
@@ -442,7 +441,9 @@ a{
         width: 100%;
         padding-left: rem(15px);
         padding-right: rem(15px);
-       
+        &--hide{
+            display: none;
+        }
     }
     &__conmentbox{
         @extend %border-radius;
@@ -460,7 +461,6 @@ a{
         top:0;
         right:0;
         font-size: rem(14px);
-
     }
     &__tags{
         padding-left: 0;
@@ -471,13 +471,52 @@ a{
         z-index: 2;
         &::before{
             content:"";
-            width:rem(20px);
-            height: rem(20px);
-            border-radius: 50%;
             background: $main-color;
+            font-family: $icon-font;
             position: absolute;
+            width:rem(25px);
+            height: rem(25px);
+            color: $white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: rem(25px);
             top: rem(10px);
-            right: rem(38px);
+            right: rem(35px);
+        }
+        &--smile{
+           &::before{
+                content:"\f118";
+            } 
+        }
+        &--calendar{
+           &::before{
+                content:"\f073";
+            } 
+        }
+        &--star{
+           &::before{
+                content:"\f005";
+            } 
+        }
+        &--heart{
+           &::before{
+                content:"\f004";
+            } 
+        }
+        &--bell{
+           &::before{
+                content:"\f0a2";
+            } 
+        }
+        &--trip{
+           &::before{
+                content:"\f39a";
+            } 
+        }
+        &--wallet{
+           &::before{
+                content:"\f1ee";
+            } 
         }
         li{
             display: inline-block;
