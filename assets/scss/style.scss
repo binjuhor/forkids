@@ -358,7 +358,7 @@ a{
     }
     &__content{
         @extend %border-radius;
-        background:$white;
+        overflow: hidden;
     }
     &__thumb{
         margin-bottom: rem(20px);
