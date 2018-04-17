@@ -63,7 +63,7 @@ a {
     right: 0px;
     top: 0px; }
     .topbar__infomation p {
-      color: rgba(74, 74, 74, 0.89);
+      color: #fff;
       display: inline-block;
       font-size: 0.875rem; }
   .topbar__avatar {
