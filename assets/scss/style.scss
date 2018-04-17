@@ -41,24 +41,20 @@ a{
     display: inline-block;
     width:100%;
     background: $main-color;
-
     .row{
         min-height: $header-height;
         position: relative;
     }
-
     &__infomation{
         position: absolute;
         right: 0px;
         top:0px;
-
         p{
             color: $body-color;
             display: inline-block;
             font-size: rem(14px);
         }
     }
-
     &__avatar{
         @extend %border-radius;
         display: inline-block;
@@ -85,7 +81,6 @@ a{
             background-position: left;
             background-size: rem(2px) rem(5px);
             background-repeat: repeat-y;
-
             width:rem(2px);
             height: 85%;
             position: absolute;
@@ -252,7 +247,7 @@ a{
     }
     &__kids{
         display: inline-block;
-        padding-left: 0;
+        padding-left: rem(10px);
         list-style: none;
         li{
             display: inline-block;
@@ -285,7 +280,7 @@ a{
             a.btn{
                 display: inline-block;
                 height: auto;
-                width:48.6%;
+                width:48%;
                 margin-right: rem(15px);
                 &:last-child{
                     margin-right: 0;

@@ -224,7 +224,7 @@ a {
       top: 0.9375rem; }
   .editor__kids {
     display: inline-block;
-    padding-left: 0;
+    padding-left: 0.625rem;
     list-style: none; }
     .editor__kids li {
       display: inline-block;
@@ -251,7 +251,7 @@ a {
       .editor__tab.active a.btn {
         display: inline-block;
         height: auto;
-        width: 48.6%;
+        width: 48%;
         margin-right: 0.9375rem; }
         .editor__tab.active a.btn:last-child {
           margin-right: 0; }
