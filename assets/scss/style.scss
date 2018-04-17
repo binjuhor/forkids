@@ -3,6 +3,15 @@
  *
  * @author: Binjuhor - binjuhor@gmail.com
  * @version: 1.0.0
+ *
+ * 01. Style for all site
+ * 02. Header
+ * 03. Times block
+ * 04. Kids list
+ * 05. Fillter event
+ * 06. Editors
+ * 07. post
+ * 08.Comment
  **/
 
 @import 'rem';
@@ -139,7 +148,7 @@ a{
  }
 
  /**
-  *05. Fillter event
+  * 05. Fillter event
   **/
 .fillters{
     position: relative;
@@ -347,7 +356,9 @@ a{
 **/
 
 .post{
-    margin-bottom: rem(30px);
+    padding-bottom: rem(30px);
+    position: relative;
+    overflow: hidden;
     &__detail{
         padding-left: 0;
         padding-right: 0;
@@ -403,6 +414,7 @@ a{
     }
     &__love{
         position: relative;
+        padding-bottom: rem(15px);
         ul{
             display: inline-block;
             padding-left: 0;
@@ -483,23 +495,23 @@ a{
         z-index: 1;
         &::after{
             content:"";
-            width:rem(5px);
-            height: 150%;
             position: absolute;
+            width:rem(5px);
+            min-height: rem(2000px);
             right: rem(60px);
-            top: -30%;
+            top: rem(-180px);
             background: $active-color;
         }
         &--lineup{
             &::after{
-                top:-100%;
+                top:rem(-300px);
             }
         }
     }
 }
 
 /**
- *  08.Comment
+ * 08.Comment
  **/
 .comments{
     &__list{
