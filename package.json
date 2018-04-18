@@ -1,0 +1,43 @@
+{
+  "name": "babylogs",
+  "version": "1.0.0",
+  "description": "Just a blog for my kids, and just a ped for improve coding skill.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "popper": "^1.0.1",
+    "sass-rem": "^2.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.2.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/kleverkod/kidslogs.git"
+  },
+  "keywords": [
+    "Bootstrap4",
+    "gulp",
+    "scss",
+    "vuejs"
+  ],
+  "author": "Binjuhor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kleverkod/kidslogs/issues"
+  },
+  "homepage": "https://gitlab.com/kleverkod/kidslogs#README"
+}

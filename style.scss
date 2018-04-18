@@ -14,8 +14,9 @@
  * 08.Comment
  **/
 
-@import 'rem';
-@import 'variable';
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import './node_modules/sass-rem/rem';
+@import './scss/variable';
 
 /**
  * 01. Style for all site
@@ -69,8 +70,8 @@ a{
     position:fixed;
     top: rem(200px);
     right: 0px;
-    min-width: rem(230px);
     text-align: left;
+    min-width: rem(200px);
     &__list{
         padding-left:rem(25px);
         color: $main-color;
@@ -113,17 +114,50 @@ a{
  **/
  .kids{
     display: inline-block;
-    margin-top: rem(105px);
     position: relative;
     z-index: 4;
-    margin-bottom: rem(80px);
+    margin-top: rem(50px);
+    @include media-breakpoint-up('md'){
+        margin-top: rem(105px);
+        margin-bottom: rem(80px);
+    }
     &__list{
         list-style: none;
         padding-left: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     &__item{
         display: inline-block;
-        margin-right: rem(50px);
+        margin-bottom: rem(30px);
+        margin-right: rem(10px);
+        @include media-breakpoint-up('md'){
+            margin-right: rem(50px);
+        }
+        img{
+            object-fit: cover;
+            width: rem();
+            height: rem();
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:first-child{
+            @include media-breakpoint-down('md'){
+                margin-left: 50%;
+                margin-right: 50%;
+            }
+            img{
+                // width:rem(175px);
+                // height: rem(175px);
+                // @include breakpoint-next('lg'){
+                    width: rem(215px);
+                    height: rem(215px);
+                // }
+            }
+        }
         a{
             @extend %box-shadow;
             border:rem(5px) solid $white;
@@ -154,18 +188,24 @@ a{
         background: $main-color;
     }
     &__list{
+        width:100%;
         display: inline-block;
         position: relative;
+        text-align: center;
         top: 50%;
         transform: translateY(-50%);
         padding-left: 0;
         list-style: none;
         margin-bottom: 0;
+        @include media-breakpoint-up('md'){
+            width: auto;
+        }
     }
     &__item{
         display: inline-block;
-        margin-left: rem(30px);
-        margin-right: rem(10px);
+        margin-left: rem(5px);
+        margin-right: rem(5px);
+        margin-bottom: rem(15px);
         width:rem(30px);
         height: rem(30px);
         border-radius: 50%;
@@ -173,6 +213,13 @@ a{
         text-align: center;
         line-height: rem(30px);
         transition: all .3s;
+        @include media-breakpoint-up('md'){
+            margin-left: rem(20px);
+        }
+        @include media-breakpoint-up('lg'){
+            margin-left: rem(30px);
+            margin-right: rem(10px);
+        }
         &.active{
             background: $main-color;
             a{
@@ -209,10 +256,19 @@ a{
        @extend  %box-bar;
     }
     &__item{
-        padding-left: rem(35px);
+        width:32%;
+        padding-left: rem(30px);
         padding-right: rem(35px);
+        text-align: center;
         display: inline-flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
+        @include media-breakpoint-up('lg'){
+            width: auto;
+            padding-left: rem(35px);
+            padding-right: rem(35px);
+        }
         &::after{
             content:"";
             position: absolute;
@@ -222,6 +278,14 @@ a{
             height: rem(29px);
             width: rem(1px);
             background: $border-color;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+                @include media-breakpoint-up('lg'){
+                    display: block;
+                }
+            }
         }
         &.active{
             color: $active-color;
@@ -248,11 +312,20 @@ a{
     &__kids{
         display: inline-block;
         padding-left: rem(10px);
+        margin-top: rem(10px);
         list-style: none;
         li{
             display: inline-block;
-            margin-right: rem(30px);
             position: relative;
+            margin-right: rem(20px);
+            img{
+                width: rem(18px);
+                height: rem(21px);
+                object-fit: cover;
+            }
+            @include media-breakpoint-up('md'){
+                margin-right: rem(30px);
+            }
             .fa{
                 display: none;
                 position: absolute;
@@ -278,10 +351,14 @@ a{
             flex: 0;
             width: 100%;
             a.btn{
+                width: 100%;
                 display: inline-block;
                 height: auto;
-                width:48%;
-                margin-right: rem(15px);
+                margin-bottom: rem(15px);
+                @include media-breakpoint-up('lg'){
+                    width:48%;
+                    margin-right: rem(15px);
+                }
                 &:last-child{
                     margin-right: 0;
                 }
@@ -333,7 +410,10 @@ a{
             line-height: rem(30px);
         }
         &--select{
-            font-size: rem(14px);
+            font-size: rem(12px);
+            @include media-breakpoint-up('md'){
+                font-size: rem(14px);
+            }
         }
         &:hover{
             color: $white;
@@ -365,6 +445,7 @@ a{
         margin-bottom: rem(20px);
         width:100%;
         img{
+            object-fit: cover;
             position: relative;
             max-width: 100%;
             height: auto;
@@ -373,6 +454,7 @@ a{
     &--thumb{
         .post__thumb{
             img{
+                object-fit: cover;
                 width:100%;
                 height: auto;
             }
@@ -539,7 +621,10 @@ a{
         }
         &--lineup{
             &::after{
-                top:rem(-300px);
+                top: rem(-80px);
+                @include media-breakpoint-up('lg'){
+                    top:rem(-300px);
+                }
             }
         }
     }
@@ -582,6 +667,7 @@ a{
         left: 0;
         overflow: hidden;
         img{
+            object-fit: cover;
             width:100%;
             height: auto;
         }
