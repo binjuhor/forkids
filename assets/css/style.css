@@ -304,7 +304,8 @@ a {
     padding-left: 0;
     padding-right: 0; }
   .post__content {
-    overflow: hidden; }
+    overflow: hidden;
+    background: #fff; }
   .post__thumb {
     margin-bottom: 1.25rem;
     width: 100%; }
@@ -456,7 +457,8 @@ a {
     border-bottom: none;
     margin-bottom: 0; }
     .comments__item--input textarea {
-      height: 2.5rem; }
+      height: 2.5rem;
+      font-size: 0.875rem; }
 
 .comments__avatar {
   display: inline-block;

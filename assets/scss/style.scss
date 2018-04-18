@@ -359,6 +359,7 @@ a{
     &__content{
         @extend %border-radius;
         overflow: hidden;
+        background: $white;
     }
     &__thumb{
         margin-bottom: rem(20px);
@@ -568,6 +569,7 @@ a{
             margin-bottom: 0;
             textarea{
                 height: rem(40px);
+                font-size: rem(14px);
             }
         }
     }
