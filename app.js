@@ -58,12 +58,17 @@
      */
     $('body').on('click','[data-action="comment"]', function(e){
         e.preventDefault();
+        let thisComment = $(this).find('.fa');
         let thisPostBox = $(this).closest('.post').find('.post__box');
         if (thisPostBox.hasClass('post__box--hide')) {
+            thisComment.removeClass('fa-comments-o')
+            thisComment.addClass('fa-comments')
             $(this).addClass('active');
             return thisPostBox.removeClass('post__box--hide');
         }
         $(this).removeClass('active');
+        thisComment.removeClass('fa-comments')
+        thisComment.addClass('fa-comments-o')
         return thisPostBox.addClass('post__box--hide');
     });
 
