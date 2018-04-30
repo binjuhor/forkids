@@ -6670,7 +6670,7 @@ a {
       cursor: pointer;
       transition: all .3s; }
       .post__action li:hover, .post__action li.active {
-        color: #d0021b; }
+        color: #80b33a; }
   .post__location {
     float: right;
     font-size: 0.875rem; }
@@ -6795,8 +6795,11 @@ a {
     border-bottom: none;
     margin-bottom: 0; }
     .comments__item--input textarea {
+      float: left;
+      width: 90%;
       height: 2.5rem;
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      margin-right: 0.625rem; }
 
 .comments__avatar {
   display: inline-block;
@@ -6822,3 +6825,9 @@ a {
 
 .comments__auth {
   display: inline-block; }
+
+.comments__btn {
+  display: inline-block; }
+  .comments__btn:hover {
+    background: #80b33a;
+    color: #fff; }

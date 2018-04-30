@@ -13,6 +13,7 @@
  * 07. post
  * 08.Comment
  **/
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import './node_modules/sass-rem/rem';
 @import './scss/variable';
@@ -480,7 +481,7 @@ a{
             cursor: pointer;
             transition: all .3s;
             &:hover, &.active{
-                color: $btn-action;
+                color: $main-color;
             }
         }
     }
@@ -652,8 +653,11 @@ a{
             border-bottom: none;
             margin-bottom: 0;
             textarea{
+                float: left;
+                width: 90%;
                 height: rem(40px);
                 font-size: rem(14px);
+                margin-right: rem(10px);
             }
         }
     }
@@ -684,5 +688,12 @@ a{
     }
     &__auth{
         display: inline-block;
+    }
+    &__btn{
+        display: inline-block;
+        &:hover{
+            background:$main-color;
+            color: $white;
+        }
     }
 }
