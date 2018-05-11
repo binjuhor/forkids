@@ -6459,14 +6459,14 @@ a {
     display: inline-block;
     position: relative;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
     padding-left: 0;
     list-style: none;
     margin-bottom: 0; }
     @media (min-width: 768px) {
       .fillters__list {
-        width: auto; } }
+        width: auto;
+        top: 50%;
+        transform: translateY(-50%); } }
   .fillters__item {
     display: inline-block;
     margin-left: 0.3125rem;

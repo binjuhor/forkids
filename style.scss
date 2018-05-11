@@ -192,13 +192,13 @@ a{
         display: inline-block;
         position: relative;
         text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
         padding-left: 0;
         list-style: none;
         margin-bottom: 0;
         @include media-breakpoint-up('md'){
             width: auto;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
     &__item{
