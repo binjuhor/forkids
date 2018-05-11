@@ -4,7 +4,7 @@
   "description": "Just a blog for my kids, and just a ped for improve coding skill.",
   "main": "gulpfile.js",
   "dependencies": {
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.1.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "popper": "^1.0.1",
@@ -17,7 +17,7 @@
     "file-loader": "^1.1.11",
     "image-webpack-loader": "^4.2.0",
     "jquery": "^3.3.1",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "^1.0.1"
