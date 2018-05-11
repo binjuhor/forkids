@@ -150,12 +150,8 @@ a{
                 margin-right: 50%;
             }
             img{
-                // width:rem(175px);
-                // height: rem(175px);
-                // @include breakpoint-next('lg'){
-                    width: rem(215px);
-                    height: rem(215px);
-                // }
+                width: rem(215px);
+                height: rem(215px);
             }
         }
         a{
@@ -504,6 +500,9 @@ a{
                 width: rem(38px);
                 height: rem(38px);
                 overflow: hidden;
+                @include media-breakpoint-down('md'){
+                    margin-bottom: rem(10px);
+                }
                 &:last-child{
                     border:none;
                 }
@@ -517,8 +516,12 @@ a{
     }
     &__box{
         width: 100%;
-        padding-left: rem(15px);
-        padding-right: rem(15px);
+        padding-left: rem(5px);
+        padding-right: rem(5px);
+        @include media-breakpoint-up('md'){
+            padding-left: rem(15px);
+            padding-right: rem(15px);
+        }
         &--hide{
             display: none;
         }
@@ -647,28 +650,36 @@ a{
         border-bottom: 1px solid $border-color;
         padding-bottom: rem(15px);
         margin-bottom: rem(15px);
-        padding-left: rem(50px);
         position: relative;
+        @include media-breakpoint-up('md'){
+            padding-left: rem(50px);
+        }
         &--input{
             border-bottom: none;
             margin-bottom: 0;
             textarea{
                 float: left;
-                width: 90%;
+                width:80%;
                 height: rem(40px);
                 font-size: rem(14px);
-                margin-right: rem(10px);
+                @include media-breakpoint-up('md'){
+                    margin-right: rem(10px);
+                    width: 90%;
+                }
             }
         }
     }
     &__avatar{
-        display: inline-block;
+        display: none;
         width:rem(38px);
         height: rem(38px);
         @extend %border-radius;
         position: absolute;
         left: 0;
         overflow: hidden;
+        @include media-breakpoint-up('md'){
+            display: inline-block;
+        }
         img{
             object-fit: cover;
             width:100%;
@@ -690,6 +701,10 @@ a{
         display: inline-block;
     }
     &__btn{
+        @include media-breakpoint-down('sm'){
+            padding:rem(7px) rem(10px);
+            margin-left: rem(5px);
+        }
         display: inline-block;
         &:hover{
             background:$main-color;

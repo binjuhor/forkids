@@ -6703,6 +6703,9 @@ a {
         width: 2.375rem;
         height: 2.375rem;
         overflow: hidden; }
+        @media (max-width: 991.98px) {
+          .post__love ul li {
+            margin-bottom: 0.625rem; } }
         .post__love ul li:last-child {
           border: none; }
         .post__love ul li img {
@@ -6711,8 +6714,12 @@ a {
           object-fit: cover; }
   .post__box {
     width: 100%;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem; }
+    @media (min-width: 768px) {
+      .post__box {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
     .post__box--hide {
       display: none; }
   .post__conmentbox {
@@ -6804,25 +6811,33 @@ a {
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 0.9375rem;
   margin-bottom: 0.9375rem;
-  padding-left: 3.125rem;
   position: relative; }
+  @media (min-width: 768px) {
+    .comments__item {
+      padding-left: 3.125rem; } }
   .comments__item--input {
     border-bottom: none;
     margin-bottom: 0; }
     .comments__item--input textarea {
       float: left;
-      width: 90%;
+      width: 80%;
       height: 2.5rem;
-      font-size: 0.875rem;
-      margin-right: 0.625rem; }
+      font-size: 0.875rem; }
+      @media (min-width: 768px) {
+        .comments__item--input textarea {
+          margin-right: 0.625rem;
+          width: 90%; } }
 
 .comments__avatar {
-  display: inline-block;
+  display: none;
   width: 2.375rem;
   height: 2.375rem;
   position: absolute;
   left: 0;
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .comments__avatar {
+      display: inline-block; } }
   .comments__avatar img {
     object-fit: cover;
     width: 100%;
@@ -6843,6 +6858,10 @@ a {
 
 .comments__btn {
   display: inline-block; }
+  @media (max-width: 767.98px) {
+    .comments__btn {
+      padding: 0.4375rem 0.625rem;
+      margin-left: 0.3125rem; } }
   .comments__btn:hover {
     background: #80b33a;
     color: #fff; }
