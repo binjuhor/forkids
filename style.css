@@ -6865,3 +6865,63 @@ a {
   .comments__btn:hover {
     background: #80b33a;
     color: #fff; }
+
+.btn-more {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1rem;
+  font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+  z-index: 9999; }
+  .btn-more svg, .btn-more span {
+    z-index: 99; }
+  .btn-more:focus, .btn-more *:focus {
+    outline: none; }
+  .btn-more__icon {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(../images/btn-logo.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position-y: 10px;
+    opacity: 0;
+    transition: all .2s ease-in;
+    z-index: 88; }
+    .btn-more__icon.sketch-file {
+      background-position-x: 8px; }
+    .btn-more__icon.github-link {
+      background-position-x: -34px;
+      background-position-y: 7px;
+      transition-delay: .1s; }
+    .btn-more__icon.donate-link {
+      background-position-x: -74px;
+      background-position-y: 6px;
+      transition-delay: .2s; }
+  .btn-more:hover .btn-more__icon {
+    opacity: 1; }
+    .btn-more:hover .btn-more__icon.sketch-file {
+      top: -60px;
+      left: 15px; }
+    .btn-more:hover .btn-more__icon.github-link {
+      top: -44px;
+      left: -45px; }
+    .btn-more:hover .btn-more__icon.donate-link {
+      top: 16px;
+      left: -60px; }
